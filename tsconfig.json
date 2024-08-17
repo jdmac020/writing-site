@@ -1,0 +1,25 @@
+{   
+  "compilerOptions": {
+  "target": "es5",
+  "module": "CommonJS",
+  "jsx": "react",
+  "outDir": "./out",
+  "rootDir": "./src",
+  "strict": true,
+  "esModuleInterop": true,
+  "skipLibCheck": true,
+  "forceConsistentCasingInFileNames": true,
+  "noImplicitAny": true,
+  "noImplicitThis": true,
+  "strictNullChecks": true,
+  "lib": [
+       "es2022",
+       "dom"
+   ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/assets"
+  ]
+}
