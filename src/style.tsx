@@ -3,7 +3,8 @@ import { createTheme } from '@mui/material/styles';
 export const lightThemeColors = {
   text: '#C5705D',
   primaryBackground: '#F8EDE3',
-
+  secondaryBackground: '#DFD3C3',
+  secondaryText: '#D0B8A8'
 }
 
 export const theme = createTheme({
@@ -21,6 +22,9 @@ export const theme = createTheme({
         root: {
           color: lightThemeColors.text,
           fontFamily: ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+        },
+        h1: {
+          fontSize: '5rem'
         }
       }
     },
@@ -37,7 +41,7 @@ export const theme = createTheme({
           color: lightThemeColors.text,
           textDecoration: 'underline',
           ':visited': {
-            color: '#D0B8A8'
+            color: lightThemeColors.secondaryText
           }
         }
       }

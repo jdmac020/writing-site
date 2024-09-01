@@ -5,6 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { lightThemeColors, theme } from '../style';
 import { NavBar } from './NavBar';
 import pageBackground from '../assets/background.jpg';
+import pageBackground2 from '../assets/background_Tall.png';
 import styled from '@emotion/styled';
 import { Footer } from './Footer';
 
@@ -29,6 +30,7 @@ export const MainLayout = () => {
 const GridWithBackground = styled(Grid)`
   height: 100%;
   width: 100%;
-  background-image: url(${pageBackground});
-  background-position: center; 
+  background-image: url(${pageBackground2});
+  background-position: center;
+  background-repeat: no-repeat;
 `
