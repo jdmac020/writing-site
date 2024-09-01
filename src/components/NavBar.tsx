@@ -1,7 +1,7 @@
-import { AppBar, Toolbar, Grid, Typography } from '@mui/material';
+import { AppBar, Toolbar, Grid, Typography, Box } from '@mui/material';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/Logo825x638.png';
+import logo from '../assets/NoNameLogo825x638.png';
 import styled from '@emotion/styled';
 
 export const NavBar = () => {
@@ -10,7 +10,7 @@ export const NavBar = () => {
       <Toolbar>
         <Grid container flex={'flex'} direction={'row'} justifyContent={'space-around'} wrap={'nowrap'}>
           <Grid container flex={'flex'}>
-            <ToolbarLogo src={logo} />
+            <Box component={'img'} src={logo} sx={{ maxWidth: { xs: '10%', lg: '8%' }, marginRight: '2rem' }}/>
             <Typography variant={'h4'} align={'center'}>John's Writing</Typography>
           </Grid>
           <Grid container flex={'flex'} direction={'row'} justifyContent={'space-around'} alignContent={'center'} width={'40%'}>
@@ -29,9 +29,4 @@ const BolderLink = styled(NavLink)`
   font-size: 1.5rem;
   letter-spacing: 0.00735em;
   line-height: 1.235;
-`
-
-const ToolbarLogo = styled('img')`
-  max-width: 5%;
-  margin-right: 2rem;
 `
