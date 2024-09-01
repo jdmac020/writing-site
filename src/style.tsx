@@ -22,9 +22,6 @@ export const theme = createTheme({
         root: {
           color: lightThemeColors.text,
           fontFamily: ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
-        },
-        h1: {
-          fontSize: '5rem'
         }
       }
     },

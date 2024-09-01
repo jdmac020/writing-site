@@ -1,13 +1,14 @@
-import styled from '@emotion/styled';
-import { Container, Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import React from 'react';
-import { lightThemeColors } from '../style';
+import { Body1, H1 } from './Typographies';
 
 export const Home = () => {
   return (
     <Grid container flex={'flex'} alignContent={'center'} direction={'column'}>
-      <Typography variant={'h1'} textAlign={'center'} width={'100%'} bgcolor={'rgb(223, 211, 195, .5)'}>John's Writing Showcase</Typography>
-      <Grid container flex={'flex'}></Grid>
+      <H1 text={"John's Story Spot"}/>
+      <Grid container flex={'flex'}>
+        <Body1 text={'Additional content down here'} />
+      </Grid>
     </Grid>
   );
 }
