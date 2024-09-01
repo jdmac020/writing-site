@@ -7,12 +7,13 @@ export const TableOfContents = () => {
   return <Grid container flex={'flex'} alignContent={'center'} direction={'column'}>
       <H1 text={"All Stories"}/>
       <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="100vh"
+        display={'flex'}
+        justifyContent={'center'}
+        alignItems={'center'}
+        minHeight={'100vh'}
         flexDirection={'column'}
       >
+        <Body1 text={"HEY MAKE ME RESPONSIVE"} />
         <Body1 text={"If things were live, this is where I would probably be listing the links to various stories you could read."} />
         <List sx={{ backgroundColor: '#F8EDE3'}}>
           <ListItem>

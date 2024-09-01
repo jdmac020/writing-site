@@ -22,6 +22,7 @@ export const Home = () => {
         <Grid container flex={'flex'} direction={'column'} width={'50%'} paddingLeft={'1.5rem'} paddingRight={'2.5rem'}>
           <Body1 text={"This is a placeholder for a new website where I'm going to combine the technical skillz and the writing skillz in one place. I'm going to self publish some writing in the most ass way possible!"} />
           <Body1 text={"The home page won't always look like this -- I'm just trying to identify what the actual reading pages should look like. So. Bear with me while I hammer out all the nitty gritty details like how many words can reasonably fit on one of these pages."} />
+          <Body1 text={"HEY MAKE ME RESPONSIVE"} />
         </Grid>
       </Grid>
     </Grid>
