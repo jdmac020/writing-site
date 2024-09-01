@@ -1,7 +1,7 @@
-import { AppBar, Toolbar, Grid, Typography, Box, Link } from '@mui/material';
+import { AppBar, Toolbar, Grid, Typography, Box } from '@mui/material';
 import React from 'react';
 import logo from '../assets/NoNameLogo825x638.png';
-import styled from '@emotion/styled';
+import { ResponsiveLink } from './ResponsiveLink';
 
 export const NavBar = () => {
   return (
@@ -22,11 +22,3 @@ export const NavBar = () => {
   );
 };
 
-interface ResponsiveLinkProps {
-  target: string;
-  text: string;
-}
-
-const ResponsiveLink = ({ target, text}: ResponsiveLinkProps) => {
-  return <Link href={target} sx={{ fontSize: { md: '2.5rem', lg: '1.5rem' }}}>{text}</Link>
-}
