@@ -12,15 +12,23 @@ export const MainLayout = () => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar />
-      <Container maxWidth={'xl'} sx={{height: '100%'}}>
-        <Grid 
+      <Container sx={{height: '100%', width: '80%'}}>
+        <GridWithBackground 
           container
+          justifySelf={'center'}
           justifyContent={'center'}
-          sx={{ paddingTop: '1rem', height: '100%'}}>
+          sx={{ height: '100%'}}>
           <Outlet />
-        </Grid>
+        </GridWithBackground>
       </Container>
       <Footer />
     </ThemeProvider>
   );
 };
+
+const GridWithBackground = styled(Grid)`
+  height: 100%;
+  width: 100%;
+  background-image: url(${pageBackground});
+  background-position: center; 
+`
