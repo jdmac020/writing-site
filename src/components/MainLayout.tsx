@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import { theme } from '../style';
+import { lightThemeColors, theme } from '../style';
 import { NavBar } from './NavBar';
 import pageBackground from '../assets/background.jpg';
 import styled from '@emotion/styled';
@@ -12,7 +12,7 @@ export const MainLayout = () => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar />
-      <Container sx={{height: '100%', width: '80%'}}>
+      <Container sx={{height: '100%', width: '80%' }}>
         <GridWithBackground 
           container
           justifySelf={'center'}

@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Grid, Typography, Box } from '@mui/material';
+import { AppBar, Toolbar, Grid, Typography, Box, Link } from '@mui/material';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/NoNameLogo825x638.png';
@@ -14,8 +14,8 @@ export const NavBar = () => {
             <Typography variant={'h4'}>John's Writing</Typography>
           </Grid>
           <Grid container flex={'flex'} direction={'row'} justifyContent={'space-around'} alignContent={'center'} width={'40%'}>
-            <BolderLink to={"/stories"}>Stories</BolderLink>
-            <BolderLink to={'/about'}>About</BolderLink>
+            <Link href={'/stories'}>Stories</Link>
+            <Link href={'/about'}>About</Link>
           </Grid>
         </Grid>
       </Toolbar>

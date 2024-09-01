@@ -1,12 +1,44 @@
 import { createTheme } from '@mui/material/styles';
 
-// this isn't actually doing anything for me -- but I'm being lazy and want the example in code
+export const lightThemeColors = {
+  text: '#C5705D',
+  primaryBackground: '#F8EDE3',
+
+}
+
 export const theme = createTheme({
+  palette: {
+    text: {
+      primary: lightThemeColors.text
+    },
+    primary: {
+      main: lightThemeColors.primaryBackground
+    }
+  },
   components: {
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: lightThemeColors.text,
+          fontFamily: ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+        }
+      }
+    },
     MuiBottomNavigation: {
       styleOverrides: {
         root: {
-          backgroundColor: 'rgb(25, 118, 210)'
+          backgroundColor: lightThemeColors.primaryBackground
+        }
+      }
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: lightThemeColors.text,
+          textDecoration: 'underline',
+          ':visited': {
+            color: '#D0B8A8'
+          }
         }
       }
     }
