@@ -19,5 +19,5 @@ export const H1 = ({text}:TypographyProps) => {
 }
 
 export const Body1 = ({text}: TypographyProps) => {
-  return <Typography fontSize={{ md: '2.25rem', lg: '1.25rem'}}>{text}</Typography>
+  return <Typography fontSize={{ md: '2.25rem', lg: '1.25rem'}} paddingBottom={'1.25rem'}>{text}</Typography>
 }
