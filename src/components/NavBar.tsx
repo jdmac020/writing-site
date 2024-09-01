@@ -9,9 +9,9 @@ export const NavBar = () => {
     <AppBar position={'static'}>
       <Toolbar>
         <Grid container flex={'flex'} direction={'row'} justifyContent={'space-around'} wrap={'nowrap'}>
-          <Grid container flex={'flex'}>
+          <Grid container flex={'flex'} alignItems={'center'}>
             <Box component={'img'} src={logo} sx={{ maxWidth: { xs: '10%', lg: '8%' }, marginRight: '2rem' }}/>
-            <Typography variant={'h4'} align={'center'}>John's Writing</Typography>
+            <Typography variant={'h4'}>John's Writing</Typography>
           </Grid>
           <Grid container flex={'flex'} direction={'row'} justifyContent={'space-around'} alignContent={'center'} width={'40%'}>
             <BolderLink to={"/stories"}>Stories</BolderLink>
